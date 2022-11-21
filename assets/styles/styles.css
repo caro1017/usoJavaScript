@@ -1,0 +1,463 @@
+/* Estilos generales */
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    background: #2C3E50;
+}
+
+/* Estilos botones */
+.mostrar{
+    display: block;
+}
+
+.ocultar{
+    display: none;
+}
+
+/* Estilos header */
+header{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+.button_contenido button{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    width: 5rem;
+    background-color: #2C3E50;
+    box-shadow: 1px 1px 5px white; 
+    margin: 0.5rem; 
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.button_contenido button:hover{
+    background-color: rgba(255, 255, 255, .18); 
+    backdrop-filter: blur(5px);
+}
+
+/* Estilos Switch */
+.switch{
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .18); 
+    backdrop-filter: blur(5px);
+    height: 50%;
+    width: 50%;
+    border-radius: 1rem;
+    margin: 1rem 0 0 25rem;
+}
+
+#color{
+    width: 20rem;
+    height: 20rem;
+    background-color: #2C3E50;
+    margin: 1.5rem 16rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 10px #2C3E50; 
+}
+
+.switch button{
+    position: absolute;
+    width: 10rem;
+    height: 3.5rem;
+    border:none;
+    cursor: pointer;
+    border-radius: 3rem;
+    box-shadow: 10px 5px 10px #2C3E50; 
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+.switch button:hover{
+    opacity: 0.6;
+}
+
+#blanco{
+    background-color: white;
+    margin: -20rem 2rem;
+}
+#azul{
+    background-color: lightblue;
+    margin: -14rem 2rem;
+}
+#rosado{
+    background-color: lightpink;
+    margin: -8rem 2rem;
+}
+
+@media screen and (max-width: 1070px){
+    .switch{
+        margin: 1rem 0 0 15rem;
+    }
+}
+
+
+/* Estilos while */
+.while{
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .18); 
+    backdrop-filter: blur(5px);
+    height: 50%;
+    width: 50%;
+    border-radius: 1rem;
+    margin: 1rem 0 0 25rem;
+}
+
+.container_while{
+    text-align: center;
+}
+
+.container_while h2{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.input input{
+    height: 2rem;
+}
+
+.input input[placeholder]{
+    width: 20rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.container_while button{
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 1px 1px 3px white;   
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.container_while button:hover{
+    background-color: #2C3E50;
+    opacity: 0.7;
+}
+
+.container_while input{
+    color: white;
+    background-color: #2C3E50;
+
+}
+
+.container_resultado{
+    display: flex;
+    justify-content: center;
+}
+.container_resultado img {
+    width: 5rem;
+    margin-top: 2rem;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 10px 5px 10px #2C3E50; 
+}
+
+/* Estilos for*/
+.for{
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .18); 
+    backdrop-filter: blur(5px);
+    height: 50%;
+    width: 50%;
+    border-radius: 1rem;
+    margin: 1rem 0 0 25rem;
+    text-align: center;
+}
+
+.for h2{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+
+}
+
+.for ol{
+    text-align: center;
+}
+
+.for li{
+    display: inline-block;
+    justify-content: center;
+    list-style: none;
+    width: 3.5rem;
+    height: 3rem;
+}
+
+.for .button{
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 1px 1px 3px white;   
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.for .button:hover{
+    background-color: #2C3E50;
+    opacity: 0.7;
+}
+
+.for .img_fruta{
+    display: block;
+    margin-left: 5px; 
+    margin-top: 2px;
+    width: 2.5rem;
+    align-items: center;
+}
+
+.for .color1{
+    background-color: lightblue;
+}
+
+.for .color2{
+    background-color: lightcoral;
+}
+
+
+/* Estilos api*/
+.api{
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .18); 
+    backdrop-filter: blur(5px);
+    height: 50%;
+    width: 50%;
+    border-radius: 1rem;
+    margin: 1rem 0 0 25rem;
+}
+
+@media screen and (max-width: 1070px){
+    .api{
+        margin: 1rem 0 0 15rem;
+    }
+}
+
+.container h2{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+form{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form input{
+    height: 2rem;
+}
+
+form i{
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    margin: 8px -40px;
+    font-size: 20px;
+    color: white;
+}
+
+
+form input[placeholder]{
+    width: 20rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+form input[type=button]{
+    cursor: pointer;
+    width: 4rem;
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 1px 1px 3px white;   
+    border: none;
+    border-radius: 30px;
+}
+
+form input[type=text]{
+    color: white;
+    background-color: #2C3E50;
+
+}
+
+
+/* Estilos para javaScript */
+#clima{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#clima p{
+    font-size: 4rem;
+    margin: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+#clima h2{
+    font-weight: 500;
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+}
+
+#clima h3{
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    margin: 4rem 0 0 -6.5rem;
+}
+
+#clima img{
+    margin: -0.5rem 0 0 3rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+#clima h4{
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    margin: 4rem 0 0 -5rem;
+    text-transform: capitalize;
+}
+
+
+/* Estilos libreria*/
+.libreria{
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .18); 
+    backdrop-filter: blur(5px);
+    height: 50%;
+    width: 50%;
+    border-radius: 1rem;
+    margin: 1rem 0 0 25rem;
+}
+
+/* Anime libreria */
+.btn_rotar{
+    cursor: pointer;
+    width: 7rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, .15); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 1px 1px 3px white;   
+    border: none;
+    border-radius: 30px;
+    color: white;
+    margin: 20rem 15rem;
+
+}
+
+.btn_rotar:hover{
+    background-color: #2C3E50;
+    opacity: 0.7;
+}
+
+.contenedor{
+    pointer-events: none;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: lightsalmon;
+    display: inline-block;
+    border-radius: 1rem;
+    margin: 13rem 0 0 16rem ;
+}
+
+/* greensock libreria */
+.contenedor2{
+    pointer-events: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    margin: -40rem 0 0 3rem ;
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+    margin: 8px;
+    display: block;
+    border-radius: 1rem;
+}
+
+.box_1{
+    background-color: lightpink;
+}
+
+.box_2{
+    background-color: lightcyan;
+}
+
+.box_3{
+    background-color: lightgoldenrodyellow;
+}
+
+
+/* Estilos autor */
+.autor{
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    margin: 25rem 30rem;
+}
+
+.autor a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px){
+    .autor{
+        margin: 150% 20%;
+    }
+
+    .autor a{
+        font-size: 0.7rem;
+    }
+}

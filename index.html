@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link estilos CSS -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <!-- link icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!-- Libreria animejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- libreria greensock --> 
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script> 
+
+    <title>Actividad 4</title>
+</head>
+<body>
+    <header>
+        <h1>Uso de JavaScript</h1>
+        <section>
+            <div class="button_contenido">
+                <button onclick="toggle('switch')">Switch</button>
+                <button onclick="toggle('while')">While</button>
+                <button onclick="toggle('for')" >For</button>
+                <button onclick="toggle('api')">API</button>
+                <button onclick="toggle('libreria')">Libreria</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Uso del Switch cambiar color -->
+        <section id="switch" class="ocultar"> 
+            <div class="switch">
+                <div id="color"></div>
+                <button id="blanco" onclick="cambiarColor('white')"> Cambiar Color</button>
+                <button id="azul" onclick="cambiarColor('lightblue')">Cambiar Color</button>
+                <button id="rosado" onclick="cambiarColor('lightpink')">Cambiar Color</button>
+            </div>
+        </section>
+
+        <!-- Uso del while juego adivinar -->
+        <section id="while" class="ocultar">
+            <div class="while">
+                <div class="container_while">
+                    <h2>Jugemos Adivina</h2>
+                    <div class="input">
+                        <input type="number" id="numeroCiclos" class="numeroCiclos" placeholder="Adivina el Numero" onclick="reglas()">
+                    </div>
+                    <button id="boton" class="btn_while">Enviar</button>
+                    <div id="resultado" class="container_resultado"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uso del for seleccionar video -->
+        <section id="for" class="ocultar">
+            <div class="for">
+                <h2> Cambiar color fondo frutas</h2>
+                <ol>
+                    <li class="color1" id="Color1"><img class="img_fruta" src="./assets/img/arandano.png" alt="arandano"></li>
+                    <li class="color2" id="Color2"><img class="img_fruta" src="./assets/img/ciruela.png" alt="ciruela"></li>
+                    <li class="color1" id="Color1"><img class="img_fruta" src="./assets/img/coco.png" alt="coco"></li>
+                    <li class="color2" id="Color2"><img class="img_fruta" src="./assets/img/frambuesa.png" alt="frambuesa"></li>
+                    <li class="color1" id="Color1"><img class="img_fruta" src="./assets/img/fresa.png" alt="fresa"></li>
+                </ol>
+                <button class="button" type="button" value="colores" onclick="cambioColores()">Cambiar Color</button>
+            </div>
+        </section>
+
+        <!-- Consumo API del clima -->
+        <section id="api" class="ocultar">
+            <div class="api">
+                <div class="container">
+                    <h2> API Clima</h2>
+                    <form>
+                        <input type="text" placeholder="Digita Ciudad" id="city"onclick="alertaApi()">
+                        <input type="button" value=" " >
+                        <i class='bx bx-search-alt-2 bx-flashing' id="send"></i>
+                    </form>
+                    <div id="clima"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uso de librerias animadas -->
+        <section id="libreria" class="ocultar">
+            <div class="libreria">
+                <!-- Animacion anime -->
+                <div class="contenedor"></div>
+                <div class="animacion">
+                    <button class="btn_rotar">Rotar</button>
+                </div>
+
+                <!-- Animacion anijs -->
+                <div id="animar" class="contenedor2">
+                    <div class="box box_1"></div>
+                    <div class="box box_2"></div>
+                    <div class="box box_3"></div>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <div class="autor"> 
+            <a href="https://www.linkedin.com/in/carolina-uribe-botero-7b0839195/" target="_blank">
+                <p>Copyright &copy; 2022 by Carolina Uribe Botero</p>
+            </a>
+        </div>
+    </footer>
+    
+    <!-- Script button Mostrar - Ocultar -->
+    <script src="./assets/js/button.js"></script> 
+    <!-- Javascript uso switch -->
+    <script src="./assets/js/switch.js"></script>
+    <!-- Javascript uso while-->
+    <script src="./assets/js/while.js"></script>
+    <!-- Javascript uso for-->
+    <script src="./assets/js/for.js"></script>
+    <!-- Javascript consumo de API -->
+    <script src="./assets/js/api.js"></script>
+    <!-- Javascript uso de libreria -->
+    <script src="./assets/js/libreria.js"></script>
+    
+</body>
+</html>
